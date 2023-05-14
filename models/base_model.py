@@ -9,7 +9,7 @@ import models
 class BaseModel:
     """the base model of the console"""
 
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """initialiser"""
         self.id = str(uuid.uuif4())
         self.created_at = datetime.datetime.now()
