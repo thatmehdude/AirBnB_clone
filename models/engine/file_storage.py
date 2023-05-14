@@ -18,3 +18,17 @@ def new(self, obj):
     key_name = obj_class_name + "." + obj_id
     obj = FileStorage.__objects[key_name]
     return obj
+
+def save(self):
+    """serializes objects to JSON file"""
+    obj = self.all()
+    with open(__file_path, "w") as FILE
+    FILE.write(json.dumps(obj))
+
+
+def reload(self):
+    """deserialises json file"""
+    try:
+        __objects = json.loads(__file_path)
+    except Exception:
+        pass
