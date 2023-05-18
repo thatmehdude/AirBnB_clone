@@ -17,7 +17,7 @@ class BaseModel:
 
     def save(self):
         """update updated_at with the current time"""
-        self.updated_at = datetime.now()
+        self.updated_at = datetime. now()
 
     def __str__(self):
         """Returns a string represnetation of the instance"""
